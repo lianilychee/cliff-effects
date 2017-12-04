@@ -1,7 +1,8 @@
 // REACT COMPONENTS
 import React from 'react';
 import {
-  Table
+  Table,
+  Dropdown
 } from 'semantic-ui-react';
 
 // CUSTOM COMPONENTS
@@ -82,8 +83,10 @@ const   columnHeaderStyle = {
       };
 
 
+var frequencies = [{text: 'weekly'}, {text: 'monthly'}, {text: 'annually'}];
 
-
+const BenefitsFrequency = function(props) {
+  <Dropdown placeholder='Select Frequency' fluid selection options={frequencies} /> };
 
 
 const SNAPBenefitRow = function( props ){
